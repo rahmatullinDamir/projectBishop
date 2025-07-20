@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+audit:
+  mode: console  # or kafka
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
